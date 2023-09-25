@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
+  photoCover: string="https://th.bing.com/th/id/OIG.zXRvxeApFTLaIwfssnxI?pid=ImgGn"
+  contentTitle:string="Arte Anônima?"
+  contentDescription:string="Aprecie esta obra de arte"
   constructor() { }
 
   ngOnInit(): void {

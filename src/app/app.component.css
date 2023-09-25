@@ -1,0 +1,30 @@
+header{
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Alterando a direção da coluna para celular */
+    align-items: center; /* Centralizando o conteúdo verticalmente para celular */
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* Mantendo a direção da linha para tablets */
+    align-items: center; /* Mantendo o alinhamento vertical no centro para tablets */
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* Mantendo a direção da linha para computadores/TVs */
+    align-items: center; /* Mantendo o alinhamento vertical no centro para computadores/TVs */
+  }
+}
