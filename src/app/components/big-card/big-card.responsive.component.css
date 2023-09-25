@@ -1,0 +1,56 @@
+@media screen and (max-width: 600px) {
+  .container__big-card {
+    width: 100%; /* Alterando a largura para ocupar toda a largura da tela */
+    height: auto; /* Redefinindo a altura para ajustar ao conteúdo */
+    margin-left: 0; /* Removendo a margem esquerda */
+    margin-right: 0; /* Removendo a margem direita */
+  }
+  .big-card__photo > img {
+    min-width: 100%; /* Imagem ocupando toda a largura do container */
+  }
+  .big-card__title > h1 {
+    font-size: 18px; /* Reduzindo o tamanho da fonte do título */
+    margin-top: 5px; /* Reduzindo a margem superior do título */
+  }
+  .big-card__description {
+    margin-top: 10px; /* Reduzindo a margem superior da descrição */
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .container__big-card {
+    width: 300px; /* Ajustando a largura para tablets */
+    height: 400px; /* Ajustando a altura para tablets */
+    margin-left: 15px; /* Ajustando a margem esquerda para tablets */
+    margin-right: 15px; /* Ajustando a margem direita para tablets */
+  }
+  .big-card__photo > img {
+    min-width: 300px; /* Ajustando a largura mínima da imagem para tablets */
+  }
+  .big-card__title > h1 {
+    font-size: 20px; /* Mantendo o tamanho da fonte original para tablets */
+    margin-top: 10px; /* Mantendo a margem superior original para tablets */
+  }
+  .big-card__description {
+    margin-top: 15px; /* Mantendo a margem superior original da descrição para tablets */
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container__big-card {
+    width: 400px; /* Mantendo a largura original para computadores/TVs */
+    height: 500px; /* Mantendo a altura original para computadores/TVs */
+    margin-left: 30px; /* Mantendo a margem esquerda original para computadores/TVs */
+    margin-right: 30px; /* Mantendo a margem direita original para computadores/TVs */
+  }
+  .big-card__photo > img {
+    min-width: 400px; /* Mantendo a largura mínima original da imagem para computadores/TVs */
+  }
+  .big-card__title > h1 {
+    font-size: 20px; /* Mantendo o tamanho original da fonte para computadores/TVs */
+    margin-top: 10px; /* Mantendo a margem superior original para computadores/TVs */
+  }
+  .big-card__description {
+    margin-top: 15px; /* Mantendo a margem superior original da descrição para computadores/TVs */
+  }
+}

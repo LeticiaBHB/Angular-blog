@@ -1,0 +1,32 @@
+@media screen and (max-width: 600px) {
+  .container__small-card {
+    width: 100%; /* Alterando a largura para ocupar toda a largura da tela */
+  }
+  .small-card__photo > img {
+    width: 50%; /* Imagem ocupando toda a largura do container */
+    min-width: 0; /* Removendo a largura mínima da imagem */
+    margin-right: 0; /* Removendo a margem direita da imagem */
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .container__small-card {
+    width: 500px; /* Ajustando a largura para tablets */
+  }
+  .small-card__photo > img {
+    width: 200px; /* Mantendo a largura da imagem para tablets */
+    min-width: 200px; /* Mantendo a largura mínima da imagem para tablets */
+    margin-right: 20px; /* Mantendo a margem direita da imagem para tablets */
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container__small-card {
+    width: 700px; /* Mantendo a largura original para computadores/TVs */
+  }
+  .small-card__photo > img {
+    width: 200px; /* Mantendo a largura original da imagem para computadores/TVs */
+    min-width: 200px; /* Mantendo a largura mínima original da imagem para computadores/TVs */
+    margin-right: 20px; /* Mantendo a margem direita original da imagem para computadores/TVs */
+  }
+}
