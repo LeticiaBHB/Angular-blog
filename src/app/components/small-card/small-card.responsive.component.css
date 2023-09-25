@@ -7,7 +7,16 @@
     min-width: 0; /* Removendo a largura mínima da imagem */
     margin-right: 0; /* Removendo a margem direita da imagem */
   }
+  .container__small-card-content a {
+    text-decoration: none; /* Removendo sublinhado de links */
+  }
+
+  .small-card__title {
+    font-size: 10px;
+    margin-left: 10px;
+  }
 }
+
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .container__small-card {
