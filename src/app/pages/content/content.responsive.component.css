@@ -1,0 +1,12 @@
+@media screen and (max-width: 600px) {
+  .content_cover > img {
+    max-width: 100%; /* Utilizar a largura máxima disponível para telas menores */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container__content {
+    height: auto; /* Remover a altura fixa para telas menores */
+    padding: 10px;
+  }
+}

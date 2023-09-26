@@ -1,18 +1,38 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { dataFake } from '../../data/dataFake'
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  styleUrls: [
+    './content.component.css',
+    './content.responsive.component.css',
+]
 })
 export class ContentComponent implements OnInit {
 
   photoCover: string="https://th.bing.com/th/id/OIG.zXRvxeApFTLaIwfssnxI?pid=ImgGn"
-  contentTitle:string="Arte Anônima?"
-  contentDescription:string="Aprecie esta obra de arte"
-  constructor() { }
+  contentTitle:string=""
+  contentDescription:string=""
+  private id:string|null = "0"
+
+  constructor(
+    private route:ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe(
+      value => console.log(this.id = value.get("id"))
+    )
+    this.setValuesToCOmponenet(this.id)
   }
 
+  setValuesToCOmponenet(id:string|null){
+    const result = dataFake.filter(article => article.id.toString() == id)[0]
+    this.contentTitle = result.title
+    this.contentDescription = result.description
+    this.photoCover = result.photoCover
+  }
 }
+
