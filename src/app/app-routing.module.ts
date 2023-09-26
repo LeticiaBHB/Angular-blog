@@ -9,7 +9,7 @@ path:'',
 component: HomeComponent
   },
   {
-    path:'content',
+    path:'content/:id',
     component:ContentComponent
   }
 ];
