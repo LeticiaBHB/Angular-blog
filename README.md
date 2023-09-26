@@ -1,4 +1,5 @@
-# AngularBlog
+responsive design for different screen sizes
+![image](https://github.com/LeticiaBHB/Angular-blog/assets/124852398/133f9b45-c59c-4f21-85c3-64987abac6f4) | ![image](https://github.com/LeticiaBHB/Angular-blog/assets/124852398/79a03634-bb4e-4ea0-b22a-52a855c76c13) 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
